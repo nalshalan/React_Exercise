@@ -10,6 +10,7 @@ function App() {
   function handleSubmit(event) {
     event.preventDefault();
     setToDoList([...toDoList, inputText]);
+    setInputText("");
   }
 
   return (
@@ -26,11 +27,11 @@ function App() {
         />
         <button>Enter</button>
       </form>
-      <ul>
+      <ol>
         {toDoList.map((element, index) => {
           return <li key={index}>{element}</li>
         })}
-      </ul>
+      </ol>
     </div>
   )
 }

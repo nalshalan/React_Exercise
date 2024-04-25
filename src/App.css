@@ -1,3 +1,39 @@
+/*
+2. Style the component a bit
+2a. Change the background color
+2b. Spinning h1 tag
+
+*/
+form {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  font-size: 1.2rem;
+}
+
+form > input {
+  font-size: 1.2rem;
+}
+
+body {
+  background-color: #07e71a33;
+}
+
+ol {
+  list-style-position: inside;
+  text-align: left;
+}
+
+h1 {
+  margin-bottom: 6rem;
+}
+
+ol > li {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -28,8 +64,8 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  h1 {
+    animation: logo-spin infinite 5s alternate;
   }
 }
 
